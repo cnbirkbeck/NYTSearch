@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York Times Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 text-center" id="title">
+                <!-- title here -->
+                <h1><i class="far fa-newspaper">New York Times Search</i></h1>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 columnContainer" id="searchParameters">
+                <div class="container formTitle" id="parametersTitle">
+                    <h5><i class="fas fa-newspaper">Search Parameters</i></h5>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="searchTermInput">Search Term</label>
+                        <input class="form-control" type="text" id="searchTerm">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                        <select class="form-control" id="numberofRecords">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="startYear">Start Year (optional)</label>
+                        <input class="form-control" type="text" id="startYear">
+                    </div>
+                    <div class="form-group">
+                        <label for="endYear">End Year (optional)</label>
+                        <input class="form-control" type="text" id="endYear">
+                    </div>
+                    <button type="button" class="btn btn-secondary" id="searchbtn"><i class="fas fa-search">Search</i></button>
+                    <button type="button" onclick="clearForm()" class="btn btn-secondary"><i class="far fa-trash-alt">Clear Results</i></button>
+
+                </form>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 columnContainer">
+                <div class="container formTitle">
+                    <h5><i class="fas fa-table">Top Articles</i></h5>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
