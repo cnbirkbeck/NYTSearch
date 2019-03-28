@@ -13,5 +13,5 @@ $('#searchbtn').on('click', function() {
     var numberOfRecords = $('#numberofRecords').val();
     var startYear = $('#startYear').val();
     var endYear = $('#endYear').val();
-    response = searchApi(searchTerm, numberOfRecords, startYear, endYear);
+    response = querySearch(searchTerm, numberOfRecords, startYear, endYear);
 });
